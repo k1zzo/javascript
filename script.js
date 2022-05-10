@@ -6,3 +6,5 @@ if (myName == 'yes') {
 } else {
     alert('check ur miim')
 }
+
+let a = "Good game";
