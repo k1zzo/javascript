@@ -1,12 +1,23 @@
 "use strict";
 
-let myName = prompt("Second for third");
-if (myName == 'yes') {
-    alert('ur are gay')
-} else {
-    alert('check ur miim')
-}
+let money = prompt("Ваш бюджет на месяц?", "");
+let time = prompt("Введите дату в формате YYYY-MM-DD", "");
 
-let a = "Good game";
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {},
+    optionalExpenses: {},
+    income: [],
+    savings:false,
+};
 
-let abc = 'abc'
+let questionOne = prompt("Введите обязательную статью расходов в этом месяце", ""),
+    questionTwo = prompt("Во сколько обойдется?"),
+    questionThree = prompt ("Введите обязательную статью расходов в этом месяце", ""),
+    questionFour = prompt("Во сколько обойдется?");
+
+appData.expenses[questionOne] = questionTwo;
+appData.expenses[questionThree] = questionFour;
+
+alert(appData.budget / 30);
