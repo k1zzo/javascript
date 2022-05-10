@@ -8,3 +8,5 @@ if (myName == 'yes') {
 }
 
 let a = "Good game";
+
+let abc = 'abc'
